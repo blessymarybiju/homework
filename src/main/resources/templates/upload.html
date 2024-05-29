@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload Form</title>
+</head>
+<body>
+    <h1>Upload Form</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file"/><br/><br/>
+        <input type="text" name="text" placeholder="Enter some text"/><br/><br/>
+        <input type="submit" value="Upload"/>
+    </form>
+    <div th:if="${message}">
+        <p th:text="${message}"></p>
+        <p th:text="${text}"></p>
+        <img th:src="${fileUrl}" alt="Uploaded Image"/>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload Form</title>
+</head>
+<body>
+    <h1>Upload Form</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file"/><br/><br/>
+        <input type="text" name="text" placeholder="Enter some text"/><br/><br/>
+        <input type="submit" value="Upload"/>
+    </form>
+    <div th:if="${message}">
+        <p th:text="${message}"></p>
+        <p th:text="${text}"></p>
+        <img th:src="${fileUrl}" alt="Uploaded Image"/>
+    </div>
+</body>
+</html>
