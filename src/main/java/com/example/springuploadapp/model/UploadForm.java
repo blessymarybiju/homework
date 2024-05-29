@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.springuploadapp.model;
 
 public class UploadForm {
     private String text;
