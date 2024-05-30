@@ -3,11 +3,12 @@ package com.example.demo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SpringUploadAppApplicationTests {
+import com.example.springuploadapp.SpringUploadAppApplication;
 
-	@Test
-	void contextLoads() {
-	}
+@SpringBootTest(classes = SpringUploadAppApplication.class)
+public class SpringUploadAppApplicationTests {
 
+    @Test
+    void contextLoads() {
+    }
 }
